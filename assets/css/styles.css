@@ -1,81 +1,20 @@
-/* .header .inner-wrap {
-    display: flex;
-}
-
-.header .inner-logo img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-}
-
-.header .inner-logo a {
-    color: var(--color-two);
-    display: flex;
-    font-size: 24px;
-    font-family: var(--font);
-    font-weight: 700;
-    align-items: center;
-    text-decoration: none;
-}
-
-.header .inner-logo {
-    margin: 15px 10px;
-}
-
-.header .inner-menu ul {
-    display: flex;
-    list-style: none;
-
-}
-
-.header .inner-menu ul li a {
-    margin: 10px;
-    text-decoration: none;
-    color: var(--color-two);
-    font-size: 20px;
-    font-family: var(--font);
-}
-
-.header .inner-menu ul li {
-    margin: 10px;
-    align-items: center;
-}
-
-.header .inner-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-}
-
-
-
-.header .inner-social i {
-    background-color: #a29e9e;
-    height: 50px;
-    width: 50px;
-    border-radius: 5px;
-    font-size: 20px;
-    color: var(--color-two);
-}
-
-.header .inner-social {
-    display: flex;
-    align-items: center;
-} */
-
-/* .container {
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-.row {
-    display: flex;
-}
+/* Header */
 
 header {
     background: #EFEFEF;
+    box-shadow: 0 1px 3px 0 rgba(0 0 0 / 10%);
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.header .row {
+    padding: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header img {
@@ -110,7 +49,7 @@ header {
     text-decoration: none;
     color: var(--color-two);
     margin: 0 20px;
-    padding: 100% 20px;
+    padding: 42px 20px;
 }
 
 .header .row {
@@ -150,3 +89,140 @@ header {
 .header .inner-menu ul li a:hover {
     background-color: #fff;
 }
+
+/* End Header */
+
+/* Section One */
+
+/* .section-one {
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-bottom: 13rem;
+    padding-top: 13rem;
+    position: relative;
+}
+
+.section-one .row {
+    position: relative;
+}
+
+.section-one .inner-box h2 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: var(--font);
+}
+
+.section-one .inner-box h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--font);
+}
+
+.section-one .inner-box p {
+    color: var(--color-one);
+    font-size: 20px;
+    font-family: var(--font);
+} */
+
+.section-one {
+    background-size: cover;
+    background-image: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-bottom: 13rem;
+    padding-top: 13rem;
+    position: relative;
+}
+
+.section-one .inner-wrap {
+    position: relative;
+}
+
+/* .section-one::before {
+    content: "";
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 0.8;
+    position: absolute;
+    pointer-events: none;
+} */
+
+.section-one h2.inner-heading {
+    color: white;
+    font-size: 17px;
+    margin: 0;
+}
+
+.section-one h1.inner-title {
+    color: white;
+    font-size: 50px;
+    margin: 25px 0 35px 0;
+}
+
+.section-one p.inner-desc {
+    opacity: 0.8;
+    color: white;
+    margin: 0 0 40px 0;
+    font-size: 18px;
+}
+
+/* buttons */
+.button {
+    color: var(--color-text);
+    background-color: white;
+    padding: 18px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.buton-two {
+    color: var(--color-text);
+    background-color: #F7D9C4;
+    border: 1px solid #F7D9C4;
+    margin-right: 20px;
+}
+
+.buton-two:hover {
+    color: var(--color-text);
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.buton-two-outline {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.buton-two-outline:hover {
+    color: var(--color-two);
+    background-color: #F7D9C4;
+    border: 1px solid #F7D9C4;
+}
+
+
+.buton-three {
+    color: white;
+    background-color: var(--color-text);
+    border: 1px solid black;
+}
+
+.buton-three:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+
+}
+
+/* buttons */
